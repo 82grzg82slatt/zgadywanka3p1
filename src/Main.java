@@ -3,7 +3,11 @@ public class Main {
     //nazwy klas powinny być z dużej litery bo tak karze obyczaj
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        System.out.println("Witamy na lekcjach programowania");
+        System.out.println("Witamy na lekcjach programowania"); //wypisanie frazy
+        //typ prosty = tylko wartość, z malej litery
+        //typ złożony to obiekt ktory ma wlasnosci i metody, z duzej litery
+        double wylosowanaLiczba = Math.random()*10+1;
+        System.out.println(wylosowanaLiczba);
     }
 }
 //pushowanie na githuba
