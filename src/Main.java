@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     //nazwa pliku i nazwa klasy muszą być takie same
     //nazwy klas powinny być z dużej litery bo tak karze obyczaj
@@ -8,6 +10,13 @@ public class Main {
         //typ złożony to obiekt ktory ma wlasnosci i metody, z duzej litery
         int wylosowanaLiczba = (int)(Math.random()*10+1);//rzutowanie
         System.out.println(wylosowanaLiczba);
+
+        System.out.println("Zgadnij liczbę");
+        Scanner klawiatura = new Scanner(System.in);
+        int wpisanaLiczba  = klawiatura.nextInt();
+
+
     }
 }
 //pushowanie na githuba
+// boolean int long short byte float double char -- typy zlozone
