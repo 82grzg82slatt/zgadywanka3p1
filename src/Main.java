@@ -8,15 +8,24 @@ public class Main {
         System.out.println("Witamy na lekcjach programowania"); //wypisanie frazy
         //typ prosty = tylko wartość, z malej litery
         //typ złożony to obiekt ktory ma wlasnosci i metody, z duzej litery
-        int wylosowanaLiczba = (int)(Math.random()*10+1);//rzutowanie
+        int wylosowanaLiczba = (int)(Math.random()*100+1);//rzutowanie
         System.out.println(wylosowanaLiczba);
 
         System.out.println("Zgadnij liczbę");
-        Scanner klawiatura = new Scanner(System.in);
-        int wpisanaLiczba  = klawiatura.nextInt();
+        Scanner Klawiatura = new Scanner(System.in);
+        int wpisanaLiczba  = Klawiatura.nextInt();
+
+        if (wpisanaLiczba == wylosowanaLiczba){
+            System.out.println("Gratulacje, wygrana");
+        }
+        else {
+            System.out.println("Pudło");
+        }
+        int roznica = wylosowanaLiczba>wpisanaLiczba? wylosowanaLiczba-wpisanaLiczba : wpisanaLiczba-wylosowanaLiczba;
+        roznica = roznica/10;//dzielenie calkowite
 
 
     }
 }
-//pushowanie na githuba
+// pushowanie na githuba
 // boolean int long short byte float double char -- typy zlozone
