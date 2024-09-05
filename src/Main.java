@@ -24,20 +24,11 @@ public class Main {
         int roznica = wylosowanaLiczba>wpisanaLiczba? wylosowanaLiczba-wpisanaLiczba : wpisanaLiczba-wylosowanaLiczba;
         roznica = roznica/10;//dzielenie calkowite
 
-        switch (roznica){
-            case 0:
-                System.out.println("Dobra robota");
-                break;
-
-            case 1:
-                System.out.println("Bardzo blisko");
-                break;
-            case 2:
-                System.out.println("Blisko");
-                break;
-            default:
-                System.out.println("Słabo");
-
+        switch (roznica) {
+            case 0 -> System.out.println("Dobra robota");
+            case 1 -> System.out.println("Bardzo blisko");
+            case 2 -> System.out.println("Blisko");
+            default -> System.out.println("Słabo");
         }
         System.out.println(switch (roznica){
          case 0 -> "Bardzo dobrze";
@@ -55,22 +46,22 @@ public class Main {
             }
         }
         //zgadujemy do skutku
-        System.out.println("Podaj liczbe");
-        wpisanaLiczba = Klawiatura.nextInt();
-        while (wylosowanaLiczba != wpisanaLiczba){
-            if (wylosowanaLiczba>wpisanaLiczba){
-                System.out.println("Wpisano za mało");
-            }
-            else
-            {
-                System.out.println("Wpisano za dużo");
-            }
-            System.out.println("Podaj liczbę");
+        do {
+            System.out.println("Podaj liczbe");
             wpisanaLiczba = Klawiatura.nextInt();
-        }
-        System.out.println("Gratulacje wygrana");
+                if (wylosowanaLiczba > wpisanaLiczba) {
+                    System.out.println("Wpisano za mało");
+                } else if (wylosowanaLiczba<wpisanaLiczba){
+                    System.out.println("Wpisano za dużo");
+                }
 
+            }
+        while (wylosowanaLiczba != wpisanaLiczba);
+            System.out.println("Gratulacje wygrana");
+        }
     }
-}
+
+
+
 // pushowanie na githuba
 // boolean int long short byte float double char -- typy zlozone
