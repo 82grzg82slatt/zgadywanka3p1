@@ -66,7 +66,9 @@ public class Main {
                 System.out.println("Wpisano za dużo");
             }
             System.out.println("Podaj liczbę");
+            wpisanaLiczba = Klawiatura.nextInt();
         }
+        System.out.println("Gratulacje wygrana");
 
     }
 }
