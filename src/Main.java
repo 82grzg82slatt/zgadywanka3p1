@@ -45,6 +45,15 @@ public class Main {
          case 2 -> "dość blisko";
             default -> "Słabo";
         });
+//zgadujemy 10 razy
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Podaj liczbę");
+            wpisanaLiczba = Klawiatura.nextInt();
+            if (wpisanaLiczba == wylosowanaLiczba){
+                System.out.println("Gratulacje wygrana");
+                break;
+            }
+        }
 
     }
 }
