@@ -54,6 +54,19 @@ public class Main {
                 break;
             }
         }
+        //zgadujemy do skutku
+        System.out.println("Podaj liczbe");
+        wpisanaLiczba = Klawiatura.nextInt();
+        while (wylosowanaLiczba != wpisanaLiczba){
+            if (wylosowanaLiczba>wpisanaLiczba){
+                System.out.println("Wpisano za mało");
+            }
+            else
+            {
+                System.out.println("Wpisano za dużo");
+            }
+            System.out.println("Podaj liczbę");
+        }
 
     }
 }
